@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  log_file: MyText
+  success_code: 1
+  attachment: MyText
+  task_start_time: 2015-06-29 19:06:20
+  task_end_time: 2015-06-29 19:06:20
+  task_id: 1
+
+two:
+  log_file: MyText
+  success_code: 1
+  attachment: MyText
+  task_start_time: 2015-06-29 19:06:20
+  task_end_time: 2015-06-29 19:06:20
+  task_id: 1

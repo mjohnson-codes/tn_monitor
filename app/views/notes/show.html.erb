@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Note text:</strong>
+  <%= @note.note_text %>
+</p>
+
+<p>
+  <strong>Tenant:</strong>
+  <%= @note.tenant_id %>
+</p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @note.vendor_id %>
+</p>
+
+<p>
+  <strong>Transfer:</strong>
+  <%= @note.transfer_id %>
+</p>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>

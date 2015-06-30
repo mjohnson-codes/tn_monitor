@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document name:</strong>
+  <%= @dt.document_name %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @dt.version %>
+</p>
+
+<p>
+  <strong>Go live date:</strong>
+  <%= @dt.go_live_date %>
+</p>
+
+<p>
+  <strong>Transfer:</strong>
+  <%= @dt.transfer_id %>
+</p>
+
+<%= link_to 'Edit', edit_dt_path(@dt) %> |
+<%= link_to 'Back', dts_index_path %>

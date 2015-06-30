@@ -1,0 +1,29 @@
+<%= form_for(@tenant) do |f| %>
+  <% if @tenant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tenant.errors.count, "error") %> prohibited this tenant from being saved:</h2>
+
+      <ul>
+      <% @tenant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tenant_name %><br>
+    <%= f.text_area :tenant_name %>
+  </div>
+  <div class="field">
+    <%= f.label :protocol %><br>
+    <%= f.text_area :protocol %>
+  </div>
+  <div class="field">
+    <%= f.label :sponsor_id %><br>
+    <%= f.number_field :sponsor_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

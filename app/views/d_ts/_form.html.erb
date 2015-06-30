@@ -1,0 +1,33 @@
+<%= form_for(@dt) do |f| %>
+  <% if @dt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dt.errors.count, "error") %> prohibited this dt from being saved:</h2>
+
+      <ul>
+      <% @dt.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :document_name %><br>
+    <%= f.text_area :document_name %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br>
+    <%= f.text_area :version %>
+  </div>
+  <div class="field">
+    <%= f.label :go_live_date %><br>
+    <%= f.date_select :go_live_date %>
+  </div>
+  <div class="field">
+    <%= f.label :transfer_id %><br>
+    <%= f.number_field :transfer_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Log file:</strong>
+  <%= @log_record.log_file %>
+</p>
+
+<p>
+  <strong>Success code:</strong>
+  <%= @log_record.success_code %>
+</p>
+
+<p>
+  <strong>Attachment:</strong>
+  <%= @log_record.attachment %>
+</p>
+
+<p>
+  <strong>Task start time:</strong>
+  <%= @log_record.task_start_time %>
+</p>
+
+<p>
+  <strong>Task end time:</strong>
+  <%= @log_record.task_end_time %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @log_record.task_id %>
+</p>
+
+<%= link_to 'Edit', edit_log_record_path(@log_record) %> |
+<%= link_to 'Back', log_records_path %>

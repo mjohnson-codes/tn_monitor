@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tenant name:</strong>
+  <%= @tenant.tenant_name %>
+</p>
+
+<p>
+  <strong>Protocol:</strong>
+  <%= @tenant.protocol %>
+</p>
+
+<p>
+  <strong>Sponsor:</strong>
+  <%= @tenant.sponsor_id %>
+</p>
+
+<%= link_to 'Edit', edit_tenant_path(@tenant) %> |
+<%= link_to 'Back', tenants_path %>

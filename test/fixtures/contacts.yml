@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  email: MyText
+  phone: MyText
+  vendor_id: 1
+  tenant_id: 1
+  sponsor_id: 1
+
+two:
+  name: MyText
+  email: MyText
+  phone: MyText
+  vendor_id: 1
+  tenant_id: 1
+  sponsor_id: 1
